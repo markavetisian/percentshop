@@ -958,7 +958,7 @@
 
           <span class="term">
             📲
-            <a href="https://t.me/drainware">
+            <a class="contact-choice-trigger" href="https://t.me/drainware">
               Contact
             </a>
           </span>
@@ -1021,7 +1021,7 @@
 
           <span class="term">
             📲
-            <a href="https://t.me/drainware">
+            <a class="contact-choice-trigger" href="https://t.me/drainware">
               Contact
             </a>
           </span>
@@ -1085,7 +1085,7 @@
 
           <span class="term">
             📲
-            <a href="https://t.me/drainware">
+            <a class="contact-choice-trigger" href="https://t.me/drainware">
               Contact
             </a>
           </span>
@@ -1148,7 +1148,7 @@
 
           <span class="term">
             📲
-            <a href="https://t.me/drainware">
+            <a class="contact-choice-trigger" href="https://t.me/drainware">
               Contact
             </a>
           </span>
@@ -1214,7 +1214,7 @@
 
           <span class="term">
             📲
-            <a href="https://t.me/drainware">
+            <a class="contact-choice-trigger" href="https://t.me/drainware">
               Contact
             </a>
           </span>
@@ -1369,11 +1369,7 @@
   const tgModal = document.getElementById("tgModal");
   const tgModalClose = document.getElementById("tgModalClose");
 
-  document.querySelectorAll('a[href="https://t.me/drainware"]').forEach(link => {
-
-    if (link.classList.contains("tg-modal-btn")) {
-      return;
-    }
+  document.querySelectorAll(".contact-choice-trigger").forEach(link => {
 
     link.addEventListener("click", function(event) {
       event.preventDefault();
