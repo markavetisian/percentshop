@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>% SHOP / TON payments</title>
+<meta name="description" content="One developer building custom TON, USDT and Telegram Stars payment systems for businesses.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='700' fill='%230098ea' text-anchor='middle'%3E%25%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #000;
+    --panel: #0b0c0f;
+    --line: rgba(255,255,255,.08);
+    --text: #f2f4f7;
+    --muted: #8b9099;
+    --dim: #5d626b;
+    --accent: #0098ea;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  header {
+    border-bottom: 1px solid var(--line);
+  }
+  header .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .mark { font: 700 15px/1 var(--mono); color: var(--text); letter-spacing: .02em; }
+  .mark span { color: var(--accent); }
+  header nav a { font: 13px/1 var(--mono); }
+
+  .hero { padding-top: 72px; padding-bottom: 48px; }
+  .tag {
+    font: 12px/1 var(--mono); color: var(--muted);
+    text-transform: uppercase; letter-spacing: .08em; margin: 0 0 20px;
+  }
+  .tag b { color: var(--accent); font-weight: 400; }
+  h1 {
+    font-size: clamp(28px, 5.4vw, 42px); line-height: 1.18;
+    font-weight: 650; letter-spacing: -.02em; margin: 0 0 20px;
+  }
+  .lead { color: var(--muted); font-size: 17px; margin: 0; max-width: 620px; }
+
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font: 600 13px/1 var(--mono); color: var(--accent);
+    text-transform: uppercase; letter-spacing: .08em; margin: 0 0 24px;
+  }
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--muted); }
+
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li {
+    display: grid; grid-template-columns: 190px 1fr; gap: 16px;
+    padding: 14px 0; border-bottom: 1px solid var(--line);
+  }
+  .list li:first-child { padding-top: 0; }
+  .list li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .list code {
+    font: 13px/1.65 var(--mono); color: var(--text);
+  }
+  .list span { color: var(--muted); }
+
+  .failures { list-style: none; margin: 20px 0 0; padding: 0; }
+  .failures li {
+    font: 13px/1.6 var(--mono); color: var(--muted);
+    padding: 6px 0 6px 20px; position: relative;
+  }
+  .failures li::before { content: "x"; position: absolute; left: 0; color: var(--accent); }
+
+  .specs {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 18px 20px; margin: 0; font: 13px/1.9 var(--mono);
+    display: grid; grid-template-columns: max-content 1fr; column-gap: 24px;
+  }
+  .specs dt { color: var(--dim); }
+  .specs dd { margin: 0; color: var(--text); }
+
+  .callout {
+    border-left: 2px solid var(--accent); padding: 4px 0 4px 18px;
+    font-size: 18px; margin: 0;
+  }
+
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; }
+  footer .wrap {
+    display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center;
+    font: 13px/1.5 var(--mono); color: var(--dim);
+  }
+  footer .soon { color: var(--dim); }
+
+  @media (max-width: 600px) {
+    .hero { padding-top: 48px; padding-bottom: 36px; }
+    section { padding: 36px 0; }
+    .list li { grid-template-columns: 1fr; gap: 4px; }
+    .specs { grid-template-columns: 1fr; }
+    .specs dd { margin-bottom: 8px; }
+    .specs dd:last-child { margin-bottom: 0; }
+    .callout { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="/" aria-label="% SHOP home"><span>%</span> SHOP</a>
+    <nav><a href="https://t.me/tg123" rel="noopener">t.me/tg123</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="tag"><b>/ton</b> &nbsp;payments development</p>
+    <h1>I build TON and Telegram Stars payment systems for businesses. Every line is written by me, not by an agency or a team.</h1>
+    <p class="lead">% SHOP is one developer. The person you talk to on Telegram is the person who writes, tests and deploys your payment code.</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What gets built</h2>
+      <ul class="list">
+        <li><code>TON payments</code><span>Payment infrastructure for accepting TON: wallets, invoices, and detection of incoming transfers.</span></li>
+        <li><code>USDT on TON</code><span>Acceptance and payouts of USDT as a jetton on the TON network.</span></li>
+        <li><code>Telegram Stars</code><span>Stars (XTR) payments inside Telegram bots and Mini Apps.</span></li>
+        <li><code>Verification</code><span>Matching each on-chain transaction to an order by sender, amount, comment and status before anything is released.</span></li>
+        <li><code>Delivery</code><span>Automatic delivery of the product, access, key or file once a payment is confirmed.</span></li>
+        <li><code>Edge cases</code><span>Handling of underpaid, overpaid, duplicate and late payments, and refunds.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Why it is built carefully</h2>
+      <p>Payment code on a blockchain does not get a second chance. A transaction that has been sent cannot be reversed, and there is no bank, processor or chargeback to fall back on. If the code sends funds to the wrong address, credits an order twice, or accepts a payment that is not real, the money is gone permanently.</p>
+      <p>The business that handles customer money is legally responsible for it. A bug in the payment flow becomes that business's problem, with its customers and with the law.</p>
+      <p>For that reason this work is built carefully by someone who has done it before and knows where these systems fail. It is not assembled quickly by someone who is meeting the failure modes for the first time. Some of the points that get checked on every project:</p>
+      <ul class="failures">
+        <li>fake jettons sent from a jetton wallet not tied to the real USDT master</li>
+        <li>missing, reused or malformed payment comments</li>
+        <li>bounced messages counted as successful payments</li>
+        <li>the same transaction processed twice after a restart</li>
+        <li>orders released before the transaction is confirmed</li>
+        <li>wrong address format (bounceable vs non-bounceable)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Process</h2>
+      <p class="callout">No KYC and no unnecessary verification steps. The process is only what is needed to scope, build and deliver the system.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Specs</h2>
+      <dl class="specs">
+        <dt>networks</dt><dd>TON mainnet, TON testnet</dd>
+        <dt>assets</dt><dd>TON, USDT (jetton), Telegram Stars (XTR)</dd>
+        <dt>surfaces</dt><dd>Telegram bots, Mini Apps, websites, backends</dd>
+        <dt>pricing</dt><dd>quoted per project after scoping</dd>
+        <dt>contact</dt><dd><a href="https://t.me/tg123" rel="noopener">t.me/tg123</a></dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>% SHOP</span>
+    <a href="https://t.me/tg123" rel="noopener">Telegram: t.me/tg123</a>
+    <span class="soon">Terms of Service (coming soon)</span>
+  </div>
+</footer>
+
+</body>
+</html>
